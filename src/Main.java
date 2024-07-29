@@ -25,6 +25,9 @@ public class Main {
         // вариант
         System.out.println(Arrays.toString(exercise1Massive3));
 
+        //for (int i = exercise1Massive1.length - 1; i >= 0; i--) {
+        //            if (i == 0) {
+
         //Задание 3
         System.out.println("Задание 3");
         for (int i = exercise1Massive1.length - 1; i >= 0 ; i--) {
