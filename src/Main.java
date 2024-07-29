@@ -25,9 +25,12 @@ public class Main {
         // вариант
         System.out.println(Arrays.toString(exercise1Massive3));
 
+        //for (int i = exercise1Massive1.length - 1; i >= 0; i--) {
+        //            if (i == 0) {
+
         //Задание 3
         System.out.println("Задание 3");
-        for (int i = 2; i < exercise1Massive1.length; i--) {
+        for (int i = exercise1Massive1.length - 1; i >= 0 ; i--) {
             if (i == 0) {
                 System.out.print(exercise1Massive1[i]);
                 break;
@@ -35,7 +38,7 @@ public class Main {
             System.out.print(exercise1Massive1[i] + ", ");
         }
         System.out.println();
-        for (int i = 2; i < exercise1Massive2.length; i--) {
+        for (int i = exercise1Massive2.length - 1; i >= 0 ; i--) {
             if (i == 0) {
                 System.out.print(exercise1Massive2[i]);
                 break;
@@ -43,7 +46,7 @@ public class Main {
             System.out.print(exercise1Massive2[i] + ", ");
         }
         System.out.println();
-        for (int i = 2; i < exercise1Massive3.length; i--) {
+        for (int i = exercise1Massive3.length - 1; i >= 0 ; i--) {
             if (i == 0) {
                 System.out.print(exercise1Massive3[i]);
                 break;
@@ -58,49 +61,14 @@ public class Main {
         System.out.println("Задание 4");
         for (int i = 0; i < exercise1Massive1.length; i++) {
             if (i == exercise1Massive1.length - 1 && exercise1Massive1[i] % 2 != 0) {
-                System.out.print(exercise1Massive1[i] +1);
+                exercise1Massive1[i] = exercise1Massive1 [i] +1;
+                System.out.print(exercise1Massive1[i]);
             }else if (exercise1Massive1[i] % 2 != 0) {
-                System.out.print(exercise1Massive1[i] + 1 + ", ");
+                exercise1Massive1[i] = exercise1Massive1 [i] +1;
+                System.out.print(exercise1Massive1[i] + ", ");
             } else {
                 System.out.print(exercise1Massive1[i] + ", ");
             }
-        }
-        System.out.println();
-
-        //Задание 4
-        System.out.println("Задание 4");
-        exercise1Massive1[0] = 2;
-        exercise1Massive1[1] = 2;
-        exercise1Massive1[2] = 4;
-        for (int i = 0; i < exercise1Massive1.length; i++) {
-            if (i == exercise1Massive1.length - 1) {
-                System.out.print(exercise1Massive1[i]);
-                break;
-            }
-            System.out.print(exercise1Massive1[i] + ", ");
-        }
-        System.out.println();
-
-        //Задание 4
-        System.out.println("Задание 4");
-        exercise1Massive1[0] = 1;
-        if (exercise1Massive1 [0] % 2 != 0) {
-            exercise1Massive1[0] = exercise1Massive1[0] +1;
-        }
-        exercise1Massive1[1] = 2;
-        if (exercise1Massive1 [1] % 2 != 0) {
-            exercise1Massive1[1] = exercise1Massive1[1] +1;
-        }
-        exercise1Massive1[2] = 3;
-        if (exercise1Massive1 [2] % 2 != 0) {
-            exercise1Massive1[2] = exercise1Massive1[2] +1;
-        }
-        for (int i = 0; i < exercise1Massive1.length; i++) {
-            if (i == exercise1Massive1.length - 1) {
-                System.out.print(exercise1Massive1[i]);
-                break;
-            }
-            System.out.print(exercise1Massive1[i] + ", ");
         }
     }
 }
