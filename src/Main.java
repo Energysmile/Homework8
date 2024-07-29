@@ -79,5 +79,28 @@ public class Main {
             }
             System.out.print(exercise1Massive1[i] + ", ");
         }
+        System.out.println();
+
+        //Задание 4
+        System.out.println("Задание 4");
+        exercise1Massive1[0] = 1;
+        if (exercise1Massive1 [0] % 2 != 0) {
+            exercise1Massive1[0] = exercise1Massive1[0] +1;
+        }
+        exercise1Massive1[1] = 2;
+        if (exercise1Massive1 [1] % 2 != 0) {
+            exercise1Massive1[1] = exercise1Massive1[1] +1;
+        }
+        exercise1Massive1[2] = 3;
+        if (exercise1Massive1 [2] % 2 != 0) {
+            exercise1Massive1[2] = exercise1Massive1[2] +1;
+        }
+        for (int i = 0; i < exercise1Massive1.length; i++) {
+            if (i == exercise1Massive1.length - 1) {
+                System.out.print(exercise1Massive1[i]);
+                break;
+            }
+            System.out.print(exercise1Massive1[i] + ", ");
+        }
     }
 }
